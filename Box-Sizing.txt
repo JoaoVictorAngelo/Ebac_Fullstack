@@ -1,0 +1,112 @@
+________________________________________________________________________________________________________________	
+	width: 
+largura do conteudo
+________________________________________________________________________________________________________________
+	height:
+É usada para definir a altura do conteudo
+________________________________________________________________________________________________________________
+	margin:
+utilizada para definir a margem de um elemento, controlando o espaço entre o elemento e os elementos vizinhos. 
+A sintaxe básica é:
+
+Um valor único: Define a margem para todos os lados do elemento
+
+Dois valores: O primeiro valor define a margem superior e inferior, o segundo define a margem
+esquerda e direita.
+
+Três valores: O primeiro valor define a margem superior, o segundo define a margem esquerda e direita, 
+o terceiro define a margem inferior.
+
+Quatro valores: Define a margem para cada lado individualmente, no sentido horário, começando pela margem 
+superior e indo para a direita.
+
+Você também pode usar porcentagens, unidades relativas, ou valores negativos, dependendo das necessidades de 
+layout específicas. O margin é frequentemente utilizado para criar espaçamentos entre elementos na página.
+________________________________________________________________________________________________________________
+			overflow: hidden -
+Quando você define overflow: hidden em um elemento, qualquer conteúdo que ultrapasse 
+os limites do elemento será cortado (escondido) e não será exibido. Isso pode ser útil em diversas situações, 
+como criar caixas de conteúdo com tamanho fixo e garantir que qualquer conteúdo que seja maior que essas caixas 
+não será visível.
+________________________________________________________________________________________________________________
+			overflow-y: hidden -  
+overflow-y se concentra especificamente no controle do overflow vertical (altura). 
+Isso significa que ela afeta apenas o conteúdo que excede a altura do elemento.
+________________________________________________________________________________________________________________
+			overflow-x: hidden
+concentra especificamente no controle do overflow horizontal (largura). 
+Isso significa que ela afeta apenas o conteúdo que excede a largura do elemento.
+________________________________________________________________________________________________________________
+			overflow-y: scroll - 
+está indicando que deseja controlar o conteúdo que ultrapassa a altura do elemento, e, 
+ao mesmo tempo, quer que uma barra de rolagem vertical seja exibida para permitir a navegação através desse
+conteúdo excedente.
+________________________________________________________________________________________________________________
+			overflow-x: scroll - 
+está indicando que deseja controlar o conteúdo que ultrapassa a largura do elemento, e, 
+ao mesmo tempo, quer que uma barra de rolagem horizontal seja exibida para permitir a navegação através desse
+conteúdo excedente.
+________________________________________________________________________________________________________________
+			overflow-y: auto - 
+ignifica que o navegador decidirá automaticamente se é necessário exibir uma barra de rolagem
+vertical. Se o conteúdo dentro do elemento exceder a altura disponível, uma barra de rolagem vertical será 
+exibida; caso contrário, nenhuma barra de rolagem será mostrada.
+________________________________________________________________________________________________________________
+			overflow-x: auto - 
+
+ignifica que o navegador decidirá automaticamente se é necessário exibir uma barra de rolagem
+horizontal. Se o conteúdo dentro do elemento exceder a largura disponível, uma barra de rolagem horizontal será 
+exibida; caso contrário, nenhuma barra de rolagem será mostrada.
+________________________________________________________________________________________________________________
+			overflow: auto -  
+
+está basicamente indicando ao navegador para decidir automaticamente se é necessário exibir
+barras de rolagem, tanto na direção horizontal quanto na vertical.
+________________________________________________________________________________________________________________
+			tipos de display
+Display block - 
+Um elemento com display: block ocupa a largura total disponível e inicia em uma nova linha,
+empurrando os elementos seguintes para a próxima linha.
+
+Display inline -  
+Não ocupa a largura total disponível e não inicia em uma nova linha.
+Outros elementos podem estar ao lado dele na mesma linha.
+________________________________________________________________________________________________________________
+			<Div>
+Por padrão tem display: block. Isso significa que ela ocupará toda a largura disponível e começará em uma 
+nova linha.
+________________________________________________________________________________________________________________
+				Propriedades que controlam o tamanho conteudo sao !
+| width: "largura"	| heigth: "tamanho"	| 
+|max-width "maxima permitida"	| max-heigth	|
+|min-width "minima permitida"	| min-heigth	|
+
+Essas propriedades são usadas para ajustar e limitar as dimensões dos elementos em uma página da web, 
+proporcionando controle sobre o layout e o design. Lembre-se de que o uso adequado dessas propriedades
+ pode contribuir para a criação de uma experiência de usuário consistente e responsiva.
+________________________________________________________________________________________________________________
+			box-sizing
+content-box (padrão):
+
+O tamanho total do elemento é calculado apenas considerando o conteúdo, excluindo o preenchimento e a borda. 
+Isso significa que, ao adicionar preenchimento ou borda, o tamanho total do elemento aumenta.
+
+border-box:
+
+O tamanho total do elemento é calculado incluindo o conteúdo, o preenchimento e a borda. Qualquer 
+preenchimento ou borda adicionado não aumentará o tamanho total do elemento, pois será incluído nos cálculos.
+
+Essa propriedade é particularmente útil quando você deseja dimensionar elementos de maneira mais previsível e 
+controlada, especialmente em layouts responsivos. Ao usar box-sizing: border-box, você pode adicionar 
+preenchimento e borda a um elemento sem alterar suas dimensões totais, facilitando o design consistente.
+________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
