@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual numero é maior?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Comparando Numeros</h1>
+    </header>
+    
+    <form id="form">
+        <label for="lado-a">Lado A</label>
+        <input type="number" placeholder="Escolha um numero" id="lado-a" required>
+        <p class="msg-erro">&#10008; Atenção lado A é maior!</p>
+
+        <label for="lado-b">Lado B</label>
+        <input type="number" placeholder="Escolha um numero" id="lado-b" required>
+        <p class="msg-sucesso">&#10004; Muito Bem lado B é maior!</p>
+        <button type="submit" id="btn-comparar">Comparar</button>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
