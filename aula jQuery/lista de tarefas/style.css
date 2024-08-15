@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 500px;
+    padding: 20px;
+}
+
+form {
+    background-color: rgb(85, 85, 238);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os elementos */
+    padding: 30px;
+    border-radius: 30px;
+}
+
+input[type="text"] {
+    width: 100%; /* Faz com que o input ocupe toda a largura do container */
+    padding: 10px; /* Adiciona um pouco de preenchimento interno */
+    border: 1px solid #ffffff; /* Borda sutil */
+    border-radius: 20px; /* Cantos arredondados */
+}
+
+button {
+    width: 100%; /* Faz com que os botões ocupem toda a largura do container */
+    padding: 10px; /* Adiciona um pouco de preenchimento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 20px; /* Cantos arredondados */
+    cursor: pointer; /* Adiciona o ponteiro do mouse */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo do botão de enviar */
+    color: white; /* Cor do texto */
+}
+
+button[type="reset"] {
+    background-color: #f44336; /* Cor de fundo do botão de reset */
+    color: white; /* Cor do texto */
+}
+
+button:hover {
+    opacity: 0.9; /* Efeito de hover para os botões */
+}
+
+.lista {
+    background-color: rgb(85, 85, 238);
+    text-align: center;
+    margin-top: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    border-radius: 20px;
+    max-height: 200px; /* Define a altura máxima da lista */
+    overflow-y: auto;
+}
+
+li {
+    margin: 15px;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: white;
+}
+
+.risco {
+    text-decoration: line-through; /* Adiciona uma linha através do texto */
+}
