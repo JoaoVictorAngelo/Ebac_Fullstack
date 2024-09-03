@@ -23,6 +23,10 @@ header {
     margin-bottom: 56px;
 }
 
+.botao-menu {
+    display: none;
+}
+
 .submenu {
     display: none;
     background-color: #fff;
@@ -102,4 +106,87 @@ aside .noticia {
     grid-template-columns: repeat(3, 32.6%);
     column-gap: 1%;
     row-gap: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    header div.container {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        display: block;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .destaque .noticia img {
+        margin-right: 0;
+    }
+
+    .noticias {
+        display: block;
+    }
+
+    .noticia .noticias {
+        display: block;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+    
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        clear: both;
+    }
+    
+    .menu li > a:hover {
+        background-color: #ccc;
+    }
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .noticia a{
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 49%);
+    }
 }
