@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Titulo';
+    src: url('font/TheGarlandScriptDemo.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+.nav-link {
+    flex-direction: row;
+    text-align: center;
+}
+
+.nav-link {
+    margin-right: 15px;   /* Espaçamento horizontal entre os links */
+}
+
+.input-group {
+    max-width: 300px;     /* Define um tamanho máximo para o campo de busca */
+}
+
+#carouselinicio {
+    background-color: black;
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out; /* Transição mais rápida */
+}
+
+/* Estilos gerais para o carousel */
+.carousel-item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção original */
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 1025px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-top: 185px;
+        width: 100px; /* Ajusta a largura dos controles para que não ultrapassem o limite das imagens */
+        height: 25%;
+    }
+}

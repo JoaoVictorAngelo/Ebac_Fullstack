@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jr.Flix - Plataforma de Streaming</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top bg-white">
+        <nav id="navhome" class="navbar navbar-expand-md">
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#navhome">
+                    <img src="https://fontmeme.com/permalink/240919/46aec8c07c602c07fd88715f230bbd25.png"
+                        alt="fonte-da-netflix">
+                </a>
+
+                <!-- Botão hambúrguer (menu mobile) -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div id="menu" class="collapse navbar-collapse justify-content-center">
+                    <div class="navbar-nav">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link me-3 dropdown-toggle" data-bs-toggle="dropdown">Séries</a>
+                            <ul class="dropdown-menu position-absolute"
+                                style="top: 100%; left: 50%; transform: translateX(-50%);">
+                                <li><a href="#" class="dropdown-item">Ação</a></li>
+                                <li><a href="#" class="dropdown-item">Drama</a></li>
+                                <li><a href="#" class="dropdown-item">Romance</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a href="#" class="nav-link me-3 dropdown-toggle" data-bs-toggle="dropdown">Filmes</a>
+                            <ul class="dropdown-menu position-absolute"
+                                style="top: 100%; left: 50%; transform: translateX(-50%);">
+                                <li><a href="#" class="dropdown-item">Ação</a></li>
+                                <li><a href="#" class="dropdown-item">Drama</a></li>
+                                <li><a href="#" class="dropdown-item">Romance</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a href="#" class="nav-link me-3 dropdown-toggle" data-bs-toggle="dropdown">Novelas</a>
+                            <ul class="dropdown-menu position-absolute"
+                                style="top: 100%; left: 50%; transform: translateX(-50%);">
+                                <li><a href="#" class="dropdown-item">Mexicanas</a></li>
+                                <li><a href="#" class="dropdown-item">Turcas</a></li>
+                                <li><a href="#" class="dropdown-item">Nacionais</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a href="#" class="nav-link me-3 dropdown-toggle" data-bs-toggle="dropdown">Animes</a>
+                            <ul class="dropdown-menu position-absolute"
+                                style="top: 100%; left: 50%; transform: translateX(-50%);">
+                                <li><a href="#" class="dropdown-item">Shounen</a></li>
+                                <li><a href="#" class="dropdown-item">Shoujo</a></li>
+                                <li><a href="#" class="dropdown-item">Seinen</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de busca -->
+                <form class="d-flex d-none d-md-block">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar...">
+                        <button type="submit" class="btn btn-outline-success">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselinicio" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselinicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselinicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselinicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselinicio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner  w-100">
+            <div class="carousel-item carousel-fade slide active">
+                <div class="ratio ratio-16x9">
+                    <img class="d-block w-100" src="img/GOT.jpg" alt="Banner game of thrones">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                    <img class="d-block w-100" src="img/piece.png" alt="Banner one piece">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                    <img class="d-block w-100" src="img/teresa.png" alt="Banner teresa">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                    <img class="d-block w-100" src="img/planetamamaco.jpg" alt="Banner Planeta dos Macacos">
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselinicio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselinicio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proximo</span>
+        </button>
+    </div>
+
+    <main>
+        <section>
+            <div class="mt-2 d-flex justify-content-center align-items-center">
+                <img src="https://fontmeme.com/permalink/240922/f64cfcafdb603b1c7e14a4b5ebe3275e.png" alt="netflix-font"></a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Drama, Suspense, Ficção Policial
+                            </div>
+                            <img src="img/altaarmadilhamar.jpg" class="img-fluid" alt="Imagem 1">
+                            <div class="card-body">
+                                <h4 class="card-title">Armadilha em alto mar</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-10 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Super-Herói, Ação
+                            </div>
+                            <img src="img/altadeadpool.jpg" class="img-fluid" alt="Imagem 2">
+                            <div class="card-body">
+                                <h4 class="card-title">Deadpool & Wolverine</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-10 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Infantil, Animação, Comédia, Aventura
+                            </div>
+                            <img src="img/altadivertidamente.jpg" class="img-fluid" alt="Imagem 3">
+                            <div class="card-body">
+                                <h4 class="card-title">Divertidamente 2</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-10 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Suspense psicológico, Terror, Drama
+                            </div>
+                            <img src="img/altanaofale.jpg" class="img-fluid" alt="Imagem 4">
+                            <div class="card-body">
+                                <h4 class="card-title">Não fale o mal</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-10 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Terror, Suspense, Fantasia
+                            </div>
+                            <img src="img/altaocorvo.jpg" class="img-fluid" alt="Imagem 5">
+                            <div class="card-body">
+                                <h4 class="card-title">O corvo</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-10 d-flex justify-content-center mb-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Terror, Ficção Científica
+                            </div>
+                            <img src="img/altalugarsilencioso.jpg" class="img-fluid" alt="Imagem 6">
+                            <div class="card-body">
+                                <h4 class="card-title">Um lugar silencioso</h4>
+                                <h5 class="card-subtitle">Sinopse</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, qui voluptate laudantium est enim, asperiores accusamus nostrum neque, animi eos facere minus aperiam nemo sint. Dolor dolorum incidunt nesciunt eaque!</p>
+                                <a href="#" class="btn btn-primary">Assista já!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h5>Sobre o Jr.Flix</h5>
+                    <p>Jr.Flix é uma plataforma de streaming que oferece uma vasta seleção de séries, filmes e animes para todos os gostos. Explore novos títulos e aproveite suas histórias favoritas.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Início</a></li>
+                        <li><a href="#" class="text-white">Séries</a></li>
+                        <li><a href="#" class="text-white">Filmes</a></li>
+                        <li><a href="#" class="text-white">Novelas</a></li>
+                        <li><a href="#" class="text-white">Animes</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: contato@jrflix.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Siga-nos nas redes sociais!</p>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p>&copy; 2024 Jr.Flix - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
