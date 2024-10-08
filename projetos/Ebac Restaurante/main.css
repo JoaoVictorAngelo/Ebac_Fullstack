@@ -17,6 +17,18 @@ body {
     color: #fff;
 }
 
-.navbar-brand {
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
     font-family: "pacifico", cursive;
+}
+
+.section-title span {
+    color: #e15f41;
+}
+
+#sobre-o-restaurante {
+    background-color: #ffeae6;
 }
