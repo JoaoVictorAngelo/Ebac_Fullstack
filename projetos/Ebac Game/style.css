@@ -1,0 +1,59 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #1E1E3F;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #1E1E3F;
+}
+
+.titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+#cabecalho .nav .nav-link, 
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+#eventos,
+#contato {
+    background-color: #ede7f7;
+}
+
+.nav-produtos .nav-link.active,
+#contato button {
+    background-color: #1E1E3F;
+    color: #fff;
+}
+
+.nav-produtos .nav-link:hover,
+.text-color {
+    color: #1E1E3F;
+}
+.fontlabel {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    color: #1E1E3F;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
