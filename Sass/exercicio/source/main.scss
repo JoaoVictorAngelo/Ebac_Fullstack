@@ -1,0 +1,110 @@
+@use 'config/reset';
+@use 'config/variaveis';
+
+@mixin centralizando {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+@mixin displayProdutos($display: grid, $colunas: 3, $colWidth:32.66%, $columnGap: 1%) {
+    margin-top: 40px;
+    display: $display;
+    grid-template-columns: repeat($colunas, $colWidth);
+    column-gap: $columnGap;
+    row-gap: 4%;
+    width: 100%;
+}
+
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$corPrincipal;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        @include centralizando;
+    }
+
+    nav {
+        ul.menu {
+            display: flex;
+
+            li {
+                font-weight: bold;
+                margin-left: 24px;
+
+                a {
+                    color: variaveis.$corSecundaria;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 56px 0;
+
+    .products {
+    @include displayProdutos(grid, 3, 32.66%, 1%);
+
+        .product-item img {
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        .product-button {
+            display: block;
+            background-color: variaveis.$corBackBotao;
+            color: variaveis.$corSecundaria;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+        
+        .product-button:hover {
+            background-color: variaveis.$corBackBotaoHover;
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$breakpoint-lg) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        @include displayProdutos(grid, 2, 48.5%, 3%);
+    }
+}
+
+@media screen and (max-width: variaveis.$breakpoint-md) {
+    section {
+        .products {
+        @include displayProdutos(block);
+        
+        .product-item  {
+            margin-bottom: 32px;
+        }
+        }
+    }
+}
