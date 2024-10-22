@@ -73,10 +73,10 @@ section .products .product-button:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
+  section .container {
     max-width: 80%;
   }
-  .products {
+  section .products {
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(2, 48.5%);
