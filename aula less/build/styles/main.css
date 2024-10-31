@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #192a56;
+  color: #d9d9d9;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .profile-avatar {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio .profile-bio-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.profile-bio-subtitle {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.profile-bio-description {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-links li img:hover {
+  transform: scale(1.3);
+  transition: all ease 0.3s;
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #4ea8de;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #d9d9d9;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #4ea8de;
+}
+.projects-list-item a:hover {
+  color: #4ea8de;
+  background-color: transparent;
+  transition: all ease 0.5s;
+}
